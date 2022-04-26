@@ -1,0 +1,59 @@
+/* -------------------FONTS ------------------ */
+
+/* fredoka-regular - latin */
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/fredoka-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/fredoka-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fredoka-600 - latin */
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/fredoka-v8-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/fredoka-v8-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+
+/* ---------------GLOBAL STYLES---------------- */
+body {
+  background-image: url("/img/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#fff;
+  font-family: 'Fredoka' sans-serif;
+  font-weight: 600;
+}
+
+.main-form__part {
+  width: 450px;
+}
+
+.result__wrapper {
+  margin-top: 50px;
+  margin-left: -200px;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 25px;
+  border:none;
+  color: black;
+  transition: 0.5s ease;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0,0.5);
+  color: #DC3545;
+}
+
+
+
+

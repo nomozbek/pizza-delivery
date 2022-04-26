@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Third exam project || Pizza delivery</title>
+  <link rel="shortcut icon" href="./img/title-img.gif">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container-md">
+    <h1 class="text-center h3 my-4">
+      Pizza delivery
+    </h1>
+    <form class="main-form row" method="POST" action="https://echo.htmlacademy.ru/">
+     
+      <div class="main-form__wrapper  col-12 col-md-8 border-right">
+
+       <!-- FORM PART AND SELECTION -->
+        <div class="main-form__part border  p-2">
+          <label class="h6 font-weight-bold" for="selection">Bread of pizza:</label>
+          <select class="pizza-size custom-select" name="selection_size" id="selection">
+          </select>
+        </div>
+
+        <!-- SIZE OF PIZZA, PART -->
+        <div class="main-form__part border p-2">
+          <h2 class="h6 font-weight-bold ">Size:</h2>
+          <div class="bread-size d-flex align-items-center"></div>
+        </div>
+
+       <!-- PRODUCTS PART -->
+        <div class="main-form__part border pizza-product  d-flex flex-column p-2">
+          <h2 class="h6 font-weight-bold">What to add on top?</h2>
+        </div>
+
+        <!-- ADDITIONS PART -->
+        <div class="main-form__part border pizza-additions  p-2">
+          <h2 class="h6 font-weight-bold">Additions:</h2>
+        </div>
+      </div>
+
+      
+      <!--     RESULT PART     -->
+
+      <div class="result__wrapper col-12 col-md-4 col-sm-6">
+        <!-- TYPE OF BREAD, RESULT -->
+        <div class="main-form__part">
+          <p class="font-weight-bold">Bread of pizza:
+            <span class="text-danger pizza-size-result font-weight-normal font-italic"></span>
+          </p>
+        </div>
+
+        <!-- SIZE OF PIZZA, RESULT -->
+        <div class="main-form__part">
+          <p class="font-weight-bold">Size of pizza:
+            <span class="text-danger bread-size-result font-weight-normal font-italic"></span>
+          </p>
+        </div>
+
+        <!-- PRODUCTS OF PIZZA, RESULT -->
+        <div class="main-form__part">
+          <p class="font-weight-bold">On the top:
+            <span class="text-danger js-poducts-result font-weight-normal d-block"></span>
+          </p>
+        </div>
+
+        <!-- ADDITIONS FOR PIZZA, RESULT -->
+        <div class="main-form__part">
+          <p class="font-weight-bold">Additions:
+            <span class="text-danger  js-additions-result font-weight-normal d-block"></span>
+          </p>
+        </div>
+
+       <!-- SUBMIT BUTTON TO echo.htmlacademy.ru  -->
+        <button class="button btn-danger " type="submit">To order</button>
+      </div>
+    </form>
+  </div>
+
+
+
+  <!-- CONNECTION WITH BOOSRTAP-JS AND SCRIPT-JS -->
+
+  <link rel="stylesheet" href="./bootstrap/js/bootstrap.bundle.min.js">
+  <script src="js/script.js"></script>
+</body>
+
+</html>
