@@ -20,6 +20,10 @@ var productOptions = ['Cucumber', 'Chicken', 'Olives', 'Pineapple', 'Mushroom', 
 var additonOptions = ['Spicy', 'With cheese'];
 
 
+
+
+
+
 // Here we use for loop, to create an options for Select 'Bread of pizza'
  for (var i = 0; i < radiusOfPizza.length; i++) {
   var newSelectOption = document.createElement('option');

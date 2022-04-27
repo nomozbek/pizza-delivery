@@ -47,6 +47,7 @@ body {
   border:none;
   color: black;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -54,17 +55,6 @@ body {
   color: #DC3545;
 } 
 
-
-.main-form__wrapper {
-  position: relative;
-}
-
-
-.main-form__part-img {
-  position: absolute;
-  top: 230px;
-  left: 217px;
-}
 
 
 
