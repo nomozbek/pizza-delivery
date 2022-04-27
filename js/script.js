@@ -9,33 +9,35 @@ var elAdditions = elOrder.querySelector('.pizza-additions');
 // Created an elements and equal 4 results to 'Form'
 var selectResult = elOrder.querySelector('.pizza-size-result');
 var radioResult = elOrder.querySelector('.bread-size-result');
-var productsResult = elOrder.querySelector('.js-poducts-result');
-var additionsResult = elOrder.querySelector('.js-additions-result');
+var productsResult = elOrder.querySelector('.products-result');
+var additionsResult = elOrder.querySelector('.additions-result');
 
 
 // There are four necessary errays, 'Options'
 var radiusOfPizza = ['Thin', 'Middle', 'Thick',];
 var widthPizza = ['35 sm', '55 sm', '70 sm'];
-var productOptions = ['Cucumber', 'Chicken', 'Olives', 'Pineapple', 'Mushroom', 'Sousage' , 'Chocolate' ];
+var productOptions = ['Cucumber', 'Chicken', 'Olives', 'Pineapple', 'Mushroom', 'Sousage' , 'Chocolate'];
 var additonOptions = ['Spicy', 'With cheese'];
 
 
 // Here we use for loop, to create an options for Select 'Bread of pizza'
  for (var i = 0; i < radiusOfPizza.length; i++) {
-  var NewSelectOption = document.createElement('option');
-  NewSelectOption.setAttribute('value', radiusOfPizza[i]);
-  NewSelectOption.textContent = radiusOfPizza[i];
-  elSelect.appendChild(NewSelectOption);
+  var newSelectOption = document.createElement('option');
+  newSelectOption.setAttribute('value', radiusOfPizza[i]);
+  newSelectOption.textContent = radiusOfPizza[i];
+  newSelectOption.classList.add('text-light', 'bg-dark');
+  elSelect.appendChild(newSelectOption);
+  elSelect.classList.add('bg-transparent','text-light');
 }; 
 
 
 elSelect.addEventListener('change', function (evt) {
   evt.preventDefault();
 
-  var sizeChoosen = [];
+  var choosenSize = [];
 
   var selectedSize = elSelect.value.trim();
-  sizeChoosen.push(selectedSize);
+  choosenSize.push(selectedSize);
   selectResult.textContent = selectedSize;
 });
 
