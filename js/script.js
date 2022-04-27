@@ -148,4 +148,5 @@ for (var i = 0; i < additonOptions.length; i++) {
 
     additionsResult.textContent = additionsChoosen.join(', ');
   });
+  
 };
